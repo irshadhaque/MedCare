@@ -1,0 +1,19 @@
+@import url('./home.css');
+
+.main-text{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: black;
+    background-color: wheat;
+    text-align: center;
+    border-radius: 10px;
+    margin: 10%;
+    padding: 10px;
+    padding-bottom: 80px;
+    box-shadow: 10px 10px 5px #888888;
+}
+/* body{
+    background-image: url(./1282794.webp);
+} */
+.navbar{
+    background-color: white;
+}

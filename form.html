@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+<body style="background-color:#040720; margin: 30px;font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">
+    <h2 style="text-align: center;color: white;">Feedback form</h2>
+    <hr>
+    <form style="border: 1px solid transparent;border-radius: 10px;margin-left: 250px;margin-right: 250px;padding-left: 40px;background-color: azure;" action="irshad.php">
+        <div>
+        <p>Name : </p>
+        <input type="text" placeholder="Your Name here...">
+    </div>
+    <div>
+        <p>Email : </p>
+        <input type="email" placeholder="Your email here...">
+    </div>
+    <div>
+        <p>Age : </p>
+        <input type="number" placeholder="Your age...">
+    </div>
+    <div>
+        <p>Gender : </p>
+        <p><input type="radio" name="gen">Male</p>
+        <p><input type="radio" name="gen">Female</p>
+        <p><input type="radio" name="gen">Others</p>
+    </div>
+    <div style="margin-bottom: 20px;">
+        <p>Date of Birth :</p>
+        <input type="date">
+    </div>
+    <div>
+        <p><label for="region">Select your region : </label></p>
+        <select name="region" style="width: 150px">
+            <option value="in">India</option>
+        <option value="in">United States</option>
+        <option value="in">Germany</option>
+        </select>
+    </div>
+    <div>
+        <p>Enter your password :</p>
+        <input type="password" placeholder="Your password here...">
+    </div>
+    <div>
+        <p>Please give us a feedback : </p>
+        <textarea rows="15" cols="50"></textarea>
+    </div>
+    <div>
+        <p><input type="checkbox">I declare that all the information mentioned above are correct from the best of my knowledge.</p>
+    </div>
+    <div style="text-align: center; margin: 50px;">
+        <input style="background-color: #040720;color:white;border: none;padding: 10px;border-radius: 4px;" type="submit">
+    </div>
+    </form>
+</body>
+</html>

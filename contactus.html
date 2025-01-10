@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contact Us</title>
+    <link rel="stylesheet" href="contactus.css">
+</head>
+<body>
+    <div class="navbar">
+        <a id="logo" href="./index.html">medcare+</a>
+    <a class="navlink" href="./aboutus.html">About Us</a>
+    <a class="navlink" href="#">Contact Us</a>
+    <a class="navlink" href="./alerts.html">Notifications</a>
+    <a class="navlink" href="./login.html">Login | Sign Up</a>
+        </div>
+    <h1>Contact Us</h1>
+    <div class="page">
+        <h1>We'd love to hear from you</h1>
+        <ul>
+            <li><h2>Medcare+ Pvt Ltd.</h2></li>
+                <li>Regd. Office: DLF Cybercity,</li>
+                <li>Bhubaneswar, Odisha - 751024</li>
+            <li>Customer Support : +91 9142358237</li>
+        </ul>
+        <div class="align">
+        <div class="iframe"><iframe width="100%" height="600" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=bhubaneswar+(My%20Business%20Name)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"><a href="https://www.gps.ie/">gps trackers</a></iframe></div>
+        
+            <fieldset>
+            <legend><h3>Post a Query</h3></legend>
+            <form onsubmit="return validateForm()">
+            <p>Name : </p>
+            <input type="text" id="name" required>
+            <p>Mobile No. : </p>
+            <input type="text" id="mob" required>
+            <p>Select City</p>
+            <select name="opt" id="city">
+                <option value=""></option>
+                <option value="bbs">Bhubaneswar</option>
+                <option value="ct">Cuttack</option>
+                <option value="pu">Puri</option>
+                <option value="rk">Rourkela</option>
+                <option value="js">Jamshedpur</option>
+            </select>
+            <p>Your Message : </p>
+            <textarea rows="15" cols="50" placeholder="Enter Your Message here..." required></textarea>
+            <button>Submit</button>
+        </form>
+        </fieldset>
+    </div>
+    </div>
+
+    <script>
+        const name = document.getElementById("name")
+        const mob = document.getElementById("mob")
+        const city = document.getElementById("city")
+        const submit = document.querySelector("button")
+        const error = document.createElement("error")
+
+        function validateForm(){
+            if(name.trim===""){
+            error.innerHTML="Name is required";
+            name.appendChild("error")
+            }
+            else if(mob.target.length!=10){
+                error.innerHTML="Enter a 10 digit mobile number";
+                mob.appendChild("error")
+            }
+            else if(city.target==="")
+            {
+                error.innerHTML="Please select a city";
+                city.appendChild("error")
+            }
+        }
+    </script>
+</body>
+</html>
